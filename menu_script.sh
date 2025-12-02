@@ -33,11 +33,11 @@ elif [[ "$cmd1" == "backup" && "$cmd2" == "DIR" || "$cmd1" == "2" ]] ; then
         echo "Enter folder name or path without space:"
         read folder
         backup_DIR $folder
-elif [[ "$cmd1" == "show" && "$cmd2" == "logs" || "$cmd1" == "$3" ]] ; then
+elif [[ "$cmd1" == "show" && "$cmd2" == "logs" || "$cmd1" == "3" ]] ; then
         echo "Enter file name:"
         read file
         show_logs $file
-elif [ "$cmd1" = "exit -o "$cmd1" = "4" ] ; then
+elif [ "$cmd1" = "exit" -o "$cmd1" = "4" ] ; then
       echo "Exiting...."
       sleep 1
       exit  0
